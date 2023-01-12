@@ -33,7 +33,7 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Rick and Morty API</h1>
+      <h1>The Rick and Morty API</h1>
       <button onClick={prev}>prev</button>
       <button onClick={next}>next</button>
       <div className='section'>
