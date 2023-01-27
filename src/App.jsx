@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react'
-import './App.css'
+import { useEffect, useState } from 'react';
+import './App.css';
+import logo from "./assets/logo.png";
 
 function App() {
   
@@ -36,18 +37,31 @@ function App() {
       <h1>The Rick and Morty API</h1>
       <button onClick={prev}>prev</button>
       <button onClick={next}>next</button>
+      {personaje.length === 19 ? (
+        <div className="loader"></div>
+      ) : (
       <div className='section'>
-        {personaje.length === 0 ? (
-          <h3>Loading...</h3>
-        ) : (
-            personaje.map(person => (
+            {personaje.map(person => (
               <div key={person.id}>
                 <img src={person.image} alt={person.name} />
                 <h3>{person.name}</h3>
               </div>
-            ))
-        )}
+            ))}
+            <footer>
+              <div>
+                <a href="https://tommyyoliver.github.io/portfolio/" target="_blank">
+                  <img src={logo} alt="logo" />
+                </a>
+              </div>
+              <p>Tommy Oliver - 2023</p>
+              <div className="footer-colors">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </footer>
       </div>
+      )}
     </div>
   )
 }
