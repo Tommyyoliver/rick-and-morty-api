@@ -52,39 +52,3 @@ button:hover {
   0% {transform: rotate(0deg);}
   100% {transform: rotate(360deg);}
 }
-
-footer {
-  border-top: 1px solid #fdfdfd; 
-  width: 100vw;
-  height: min-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px
-}
-footer p {
-  font-weight: bold;
-}
-footer img {
-  width: 150px;
-}
-
-
-.footer-colors {
-  display: flex;
-  flex-direction: row;
-}
-.footer-colors div {
-  width: 50px;
-  height: 30px;
-}
-.footer-colors div:nth-child(1) {
-  background-color: #fdfdfd;
-}
-.footer-colors div:nth-child(2) {
-  background-color: #242424;
-}
-.footer-colors div:nth-child(3) {
-  background-color: #646cff;
-}

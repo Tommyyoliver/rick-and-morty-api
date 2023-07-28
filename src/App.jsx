@@ -47,19 +47,6 @@ function App() {
                 <h3>{person.name}</h3>
               </div>
             ))}
-            <footer>
-              <div>
-                <a href="https://tommyyoliver.github.io/portfolio/" target="_blank">
-                  <img src={logo} alt="logo" />
-                </a>
-              </div>
-              <p>Tommy Oliver - 2023</p>
-              <div className="footer-colors">
-                <div></div>
-                <div></div>
-                <div></div>
-              </div>
-            </footer>
       </div>
       )}
     </div>
